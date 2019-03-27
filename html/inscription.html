@@ -11,19 +11,35 @@
         <img src="../images/logo.png" alt="logo" class="logo" width=125/><br/><br/>
         <a href="connection.html"><button type="button" class="btn btn-primary bt">Connection</button></a><br/></br>  
         <a href="index.html"><button type="button" class="btn btn-primary bt">Home</button></a><br/><br/>
-        <form name="inscri" method="" action="">
-            Nom: <input type="text" name="nom" placeholder="entrez votre nom" required/><br/><br/>
-            Prenom: <input type="text" name="prenom" placeholder="entrez votre prenom" required/><br/><br/>
-            Tel: <input type="number" name="tel" placeholder="entrez votre telephone" /><br/><br/>
-            Genre: <input type="radio" name="genre" value="homme"/>Homme
-                   <input type="radio" name="genre" value="femme"/>Femme
-                   <input type="radio" name="genre" value="autre"/>Autre
-            <br/><br/>
-            E-mail:<input type="email" name="mail" required/><br/><br/>
-            Date de naissance:<input type="date" name="naiss"><br/><br/>
-            Nationalité:
-                <select>
-                    <option value="nationalité" selected>..</option>
+        <section id="s1">
+            <form name="inscri" >
+                <div class="form-group">
+                    <label >Nom:</label>
+                    <input type="text" class="form-control"  name="nom" placeholder="Entrez votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label>Prenom:</label>
+                    <input type="text" class="form-control"  name="prenom" placeholder="Entrez votre prenom" required>
+                </div>
+                <div class="form-group">
+                    <label>Tel:</label>
+                    <input type="number" class="form-control"  name="prenom" placeholder="Entrez votre telephone">
+                </div> 
+                Genre: <input type="radio" name="genre" value="homme"/>Homme
+                    <input type="radio" name="genre" value="femme"/>Femme
+                    <input type="radio" name="genre" value="autre"/>Autre
+                <br/><br/>
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input type="email" class="form-control"  name="mail" placeholder="Entrez votre e-mail" required>
+                </div>
+                <div class="form-group">
+                        <label>Date de naissance:</label>
+                        <input type="date" class="form-control"  name="naiss">
+                </div>
+                <label>Nationalité:</label>
+                <select class="form-control">
+                    <option value="choix" selected>..</option>
                     <option value="egyptien">Égyptien</option>
                     <option value="francais ">Francais </option>
                     <option value="libanais">Libanais</option>
@@ -31,19 +47,37 @@
                     <option value="russe">Russe</option>
                     <option value="tunisien">Tunisien</option>    
                     <option value="chinois">Chinois</option>
-                </select>
-            <br/><br/>
-            Intérêt:<br/>
-                <input type="checkbox" value="lecture" />Lecture<br/>
-                <input type="checkbox" value="sports" />Sports<br/>
-                <input type="checkbox" value="cuisine" />Cuisine<br/>
-                <input type="checkbox" value="theatre" />Théâtre<br/>
-                <input type="checkbox" value="musique"/>Musique<br/>
-                <input type="checkbox" value="photographie"/>Photographie<br/><br/>
-            Mot de passe:<input type="password" name="mdp" required/><br/><br/>
-            Confirmez mot de passe:<input type="password" name="cmdp" required/><br/><br/>
-            <input type="submit" value="Envoyer"/>
-            <input type="reset" value="Effacer"/>
-        </form>
+                </select></br>
+                <label>Intérêt:</label><br/>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="lecture">Lecture</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="sports">Sports</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="cuisine">Cuisine</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="theatre">Théâtre</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="musique">Musique</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="photographie">Photographie</label>
+                </div>
+                <div class="form-group">
+                    <label>Mot de passe:</label>
+                    <input type="password" class="form-control"  name="mdp" required>
+                </div>
+                <div class="form-group">
+                    <label>Confirmez mot de passe:</label>
+                    <input type="password" class="form-control"  name="cmdp" required>
+                </div>
+                <button type="submit" class="btn btn-success" id="bt_send">Envoyer</button>
+                <button type="reset" class="btn btn-danger">Effacer</button>
+            </form>
+         </section>
     </body>
 </html>
