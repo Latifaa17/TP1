@@ -1,5 +1,6 @@
 .bt{
     margin-left :5px;
+    margin-top: 15px;
 }
 #p1{
     margin-left :10px;
@@ -16,8 +17,8 @@
 #pass {
     width:40%;
 }
-#conn{
-    margin-left :130px;
+.conn{
+    margin-left :150px;
     margin-right: 20px;
 }
 .s1{
