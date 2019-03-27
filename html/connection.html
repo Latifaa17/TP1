@@ -10,8 +10,12 @@
         <img src="../images/logo.png" alt="logo" class="logo" width=125/><br/><br/>
         <a href="inscription.html"><button type="button" class="btn btn-primary bt">Inscription</button></a><br/><br/>
         <a href="index.html"><button type="button" class="btn btn-primary bt">Home</button></a><br/><br/>
-        E-mail:<input type="email" name="mail" required/><br/><br/>
-        Mot de passe:<input type="password" name="mdp" required/><br/><br/>
+        <div class="input-group mb-3" id="mail">
+            <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="input-group mb-3" id="pass">
+                <input type="password" class="form-control"  placeholder="Password">
+        </div>
         <a href="home.html"><button>Se connecter</button></a>  
         <input type="button" value="Effacer" onclick="supprimer()"/>
         
