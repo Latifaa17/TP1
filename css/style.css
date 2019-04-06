@@ -22,7 +22,7 @@
     margin-right: 20px;
 }
 .s1{
-    width: 50%;
+    width: 60%;
     padding-left: 10%;
 }
 #bt_send{
@@ -38,4 +38,10 @@
 }
 .bg{
     background-color: rgba(166, 199, 241, 0.384);
+}
+.s3{
+    margin-top: 80px;
+    margin-left: 30%;
+    width: 40%;
+    background-image: url("../images/map.png");
 }
