@@ -11,11 +11,11 @@
             <img src="../images/logo.png" alt="logo" class="logo" width=125/><br/>
             <a href="connection.html"><button type="button" class="btn btn-primary bt">Se déconnecter</button></a><br/>
             <a href="home.html"><button type="button" class="btn btn-primary bt">Accueil</button></a><br/>       
-            <form name="todo" class="s1">
+            <form name="todo" class="s1" action="../php/ajoutertodo.php" method="POST">
                 <hr/>
                 <h3>Description:</h3>
                 <div class="form-group">
-                    <textarea class="form-control" rows="4" id="comment"></textarea>
+                    <textarea class="form-control" name="d" rows="4" id="comment" ></textarea>
                 </div>
                 <button type="submit" class="btn btn-success conn" >Envoyer</button>
                     <button type="reset" class="btn btn-danger">Effacer</button>
